@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="/SiteTesting/Portfolio/Game/phaser.min.js"></script>
+</head>
+<body>
+
+    <script type ="text/javascript">
+
+      var game = new Phaser.Game(800,600,Phaser.CANVAS,'');
+
+      game.state.add('Boot', Game.Boot);
+      game.state.add('Assetloader', Game.Assetloader);
+      game.state.add('SelectScreen', Game.SelectScreen);
+      game.state.add('Landinglev', Game.Landinglev);
+    </script>
+
+</body>
+</html>

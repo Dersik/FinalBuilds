@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>OBTN Tierlist</title>
+        <link rel="stylesheet" href="Tierlist.css">
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <!-- Our Custom CSS -->
+
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <!-- Bootstrap Js CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+
+
+
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar"class="active">
+                <div class="sidebar-header">
+                    <h3>Overwatch by the Numbers</h3>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li class="active">
+                        <a href="#homeSubmenu">Home</a>
+                    </li>
+                    <li>
+                        <a href="/Tierlist.html">Tierlist</a>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li><a href="#">Page 1</a></li>
+                            <li><a href="#">Page 2</a></li>
+                            <li><a href="#">Page 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                </ul>
+
+                <ul class="list-unstyled CTAs">
+                    <li><a href="https://overwatch.gamepedia.com/Overwatch_Wiki" class="download">Overwatch wiki</a></li>
+                </ul>
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+
+                        <div class="navbar-header">
+                            <button type="button" id="sidebarCollapse" class="navbar-btn active">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#" class="pntext">Current Patch Notes</a></li>
+                                <li><a href="#" class="pntext">PTR Patch Notes</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <h2>Current Patch Tierlist</h2>
+                <p> Our tierlist is calculated using proabilistic trends based on current patch match data. For more info on our algorithm head to our "about" page.
+
+                <div class="line"></div>
+                <section id="main">
+                  <div class="container" id="cont">
+                    <div class="tier stier col-md-3">
+                      <p class="tierletter">S Tier </p>
+                      <div class="hero col-sm-6">
+                        <img src="/SiteTesting/Portfolio/OBTN/images/Lucio.svg">
+                        <p class="name">Lucio</p>
+                      </div>
+                      <div class="hero col-sm-6">
+                        <img src="/SiteTesting/Portfolio/OBTN/images/Ana.svg">
+                        <p class="name">Ana</p>
+                      </div>
+                      <div class="hero col-sm-6">
+                        <img src="/SiteTesting/Portfolio/OBTN/images/Mercy.svg">
+                        <p class="name">Mercy</p>
+                      </div>
+                      <div class="hero col-sm-6">
+                        <img src="/SiteTesting/Portfolio/OBTN/images/Doomfist.svg">
+                        <p class="name">Doomfist</p>
+                      </div>
+                    </div>
+                      <div class="tier atier col-md-3">
+                        <p class="tierletter">A Tier </p>
+                        <div class="hero col-sm-6">
+                          <img src="/SiteTesting/Portfolio/OBTN/images/Genji.svg">
+                          <p class="name">Genji</p>
+                        </div>
+                        <div class="hero col-sm-6">
+                          <img src="/SiteTesting/Portfolio/OBTN/images/Mcree.svg">
+                          <p class="name">Mcree</p>
+                        </div>
+                        <div class="hero col-sm-6">
+                          <img src="/SiteTesting/Portfolio/OBTN/images/Pharah.svg">
+                          <p class="name">Pharah</p>
+                        </div>
+                        <div class="hero col-sm-6">
+                          <img src="/SiteTesting/Portfolio/OBTN/images/Soldier76.svg">
+                          <p class="name">Soldier76</p>
+                        </div>
+                        <div class="hero col-sm-6">
+                          <img src="/SiteTesting/Portfolio/OBTN/images/Sombra.svg">
+                          <p class="name">Sombra</p>
+                        </div>
+                        <div class="hero col-sm-6">
+                          <img src="/SiteTesting/Portfolio/OBTN/images/Tracer.svg">
+                          <p class="name">Tracer</p>
+                        </div>
+                        <div class="hero col-sm-6">
+                          <img src="/SiteTesting/Portfolio/OBTN/images/Bastion.svg">
+                          <p class="name">Bastion</p>
+                        </div>
+                    </div>
+
+                    <div class="tier btier col-md-3">
+                      <p class="tierletter">B Tier </p>
+                      <div class="hero col-sm-6">
+                        <img src="/SiteTesting/Portfolio/OBTN/images/Junkrat.svg">
+                        <p class="name">Junkrat</p>
+                      </div>
+                      <div class="hero col-sm-6">
+                        <img src="/SiteTesting/Portfolio/OBTN/images/Hanzo.svg">
+                        <p class="name">Hanzo</p>
+                      </div>
+                      <div class="hero col-sm-6">
+                        <img src="/SiteTesting/Portfolio/OBTN/images/Mei.svg">
+                        <p class="name">Mei</p>
+                      </div>
+                      <div class="hero col-sm-6">
+                        <img src="/SiteTesting/Portfolio/OBTN/images/Widowmaker.svg">
+                        <p class="name">Widowmaker</p>
+                      </div>
+                      <div class="hero col-sm-6">
+                        <img src="/SiteTesting/Portfolio/OBTN/images/Torbjorn.svg">
+                        <p class="name">Torbjorn</p>
+                      </div>
+                      <div class="hero col-sm-6">
+                        <img src="/SiteTesting/Portfolio/OBTN/images/D.va.svg">
+                        <p class="name">D.Va</p>
+                      </div>
+                      <div class="hero col-sm-6">
+                        <img src="/SiteTesting/Portfolio/OBTN/images/Orisa.svg">
+                        <p class="name">Orisa</p>
+                      </div>
+                  </div>
+
+                  <div class="tier ctier col-md-3">
+                    <p class="tierletter">C Tier </p>
+                    <div class="hero col-sm-6">
+                      <img src="/SiteTesting/Portfolio/OBTN/images/Reinhardt.svg">
+                      <p class="name">Reinhardt</p>
+                    </div>
+                    <div class="hero col-sm-6">
+                      <img src="/SiteTesting/Portfolio/OBTN/images/Winston.svg">
+                      <p class="name">Winston</p>
+                    </div>
+                    <div class="hero col-sm-6">
+                      <img src="/SiteTesting/Portfolio/OBTN/images/ryangulley.jpg">
+                      <p class="name">Gulley</p>
+                    </div>
+                    <div class="hero col-sm-6">
+                      <img src="/SiteTesting/Portfolio/OBTN/images/Zarya.svg">
+                      <p class="name">Zarya</p>
+                    </div>
+                    <div class="hero col-sm-6">
+                      <img src="/SiteTesting/Portfolio/OBTN/images/Moira.svg">
+                      <p class="name">Moira</p>
+                    </div>
+                    <div class="hero col-sm-6">
+                      <img src="/SiteTesting/Portfolio/OBTN/images/Symmetra.svg">
+                      <p class="name">Symmetra</p>
+                    </div>
+                    <div class="hero col-sm-6">
+                      <img src="/SiteTesting/Portfolio/OBTN/images/Zenyatta.svg">
+                      <p class="name">Zenyatta</p>
+                    </div>
+                    <div class="hero col-sm-6">
+                      <img src="/SiteTesting/Portfolio/OBTN/images/Bridget.svg">
+                      <p class="name">Brigette</p>
+                    </div>
+                </div>
+                </section>
+              </div>
+
+
+
+
+
+
+
+
+         <script type="text/javascript">
+             $(document).ready(function () {
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                     $(this).toggleClass('active');
+                 });
+             });
+         </script>
+    </body>
+</html>

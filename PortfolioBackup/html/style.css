@@ -1,0 +1,225 @@
+
+*{
+  margin:0px;
+  padding:0px;
+  text-decoration: none;
+}
+
+#landing{
+  position:relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+#particles-js1{
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background: #740095; /* Old Browsers */
+  background: -webkit-linear-gradient(bottom,#740095,#000000); /*Safari 5.1-6*/
+  background: -o-linear-gradient(bottom,#740095,#000000); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(bottom,#740095,#000000); /*Fx 3.6-15*/
+  background: linear-gradient(to top, #740095, #000000); /*Standard*/
+}
+#particles-js2{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+canvas{
+  z-index: 1;
+}
+.titletext{
+  width:100%;
+  position:relative;
+  color:white;
+  font-family: 'Maven Pro', sans-serif;
+  text-align: center;
+  style:bold;
+  z-index: 10;
+}
+h4{
+  font-weight: 200;
+  font-size: 43px;
+  padding-top: 25px;
+}
+h3{
+  font-size: 105px;
+}
+.scrollLink{
+  position:relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width:300px;
+  height:120px;
+  z-index: 10;
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+p{
+  font-size: 29px;
+  color:white;
+  font-family: 'Maven Pro', sans-serif;
+}
+.header{
+  width:100%;
+  height:1px;
+}
+.active:hover, .scrollLink:hover > .active{
+  animation: activehover 1.5s infinite;
+}
+#abouttab{
+  width:100%;
+  height:auto;
+  display:flex;
+  flex-direction: column;
+}
+.abouttext{
+  margin-left: auto;
+  margin-right: auto;
+  font-size:13px;
+  width:80%;
+  display:flex;
+  justify-content: space-around;
+}
+h2{
+  text-align: center;
+  width:100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size:30px;
+  font-family: 'Montserrat', sans-serif;
+}
+.topmarg{
+  margin-top: 100px;
+
+}
+.botmarg{
+  margin-bottom: 100px;
+}
+.mepic{
+  height:180px;
+  width:198px;
+  border-radius: 50%;
+  border: 3px solid purple;
+  box-shadow: 9px 11px 41px 0px rgba(0,0,0,0.75);
+}
+h1{
+  width:50%;
+  font-size: 23px;
+  font-family: 'Montserrat', sans-serif;
+}
+#portfoliotab{
+  background-color: #e2dbff;
+  width:100%;
+  height:auto;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.portfoliotext img{
+  max-width:550px;
+  max-height:200px;
+  width: auto;
+  height: auto;
+  border-radius: 4%;
+}
+p{
+  font-family: 'Montserrat', sans-serif;
+}
+p span{
+
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+p .role{
+  border-bottom: 2px solid purple;
+  font-size: 12px;
+  color:purple;
+}
+br {
+   display: block;
+   margin: 10px 0;
+}
+#strain p{
+  font-size: 20px;
+  color:black;
+}
+#strain {
+  width:35%;
+  display:flex;
+  flex-direction: column;
+}
+.smmargbot{
+  margin-bottom: 15px;
+}
+@keyframes activehover {
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(15px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  p{
+    font-size: 12px;
+  }
+  img{
+    margin-top: 0!important;
+  }
+  .portfoliotext img{
+    width:230px;
+  }
+  .abouttext{
+    flex-flow: row wrap;
+    align-content: flex-start;
+  }
+  .mepic{
+    position:relative;
+    bottom:40px;
+  }
+  h1{
+    width:90%;
+    margin-top:20px;
+    font-size: 19px;
+  }
+
+  h3{
+    font-size: 60px;
+  }
+  h4{
+    margin-top: 30px;
+    font-size:30px;
+  }
+  #strain{
+    width:85%;
+  }
+  #strain img{
+    padding-bottom: 45px;
+  }
+  .smargbot p{
+    font-size: 20px;
+  }
+}
