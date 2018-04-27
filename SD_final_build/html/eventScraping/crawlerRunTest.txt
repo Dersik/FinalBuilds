@@ -1,0 +1,17 @@
+possible memory leak
+    65 instances of Xvfb
+    0 instances of chromium-browse
+
+program terminated with following stack trace:
+
+HTML LOAD ERROR
+Traceback (most recent call last):
+File "gh_crawler1.py", line 39, in <module>
+run()
+File "gh_crawler1.py", line 36, in run
+gh_event_scraper.run(event)
+File "/var/www/html/eventScraping/gh-scraper/gh_event_scraper.py", line 25, in run
+gh_event_to_db(event)
+File "/var/www/html/eventScraping/gh-scraper/gh_event_scraper.py", line 41, in gh_event_to_db
+query = "INSERT INTO events (name, date, locationName, cityName, stateName, latitude, longitude, description, source) VALUES ( \"%s\", \"%s\", \"%s\", \"%s\", \"%s\", \"%s\", \"%s\", \"%s\", \"%s\")" % tuple(event_line)
+TypeError: 'int' object is not iterable

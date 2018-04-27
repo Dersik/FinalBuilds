@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  background-color: #f5f5f5;
+  font-family: 'Roboto', sans-serif;
+}
+body.no-scroll {
+  overflow: hidden;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns:9% 400px 4% 50% 4% 15%;
+    grid-template-rows: 10%  80%  10%;
+    grid-template-areas:
+        ". title . . . ."
+        ". search prevbutton tiles nextbutton ."
+        ". . . . . ."
+    ;
+    width:100vw;
+    height:100vh;
+    background: #1768AC;
+}
+.hidden {
+   display:none;
+}
+
+.title{
+    grid-area: title;
+    font-family:Ubuntu;
+    color:black;
+    float:right;
+    font-size:50px;
+    align-self:flex-end;
+}
+.search{
+    grid-area:search;
+    display: grid;
+    grid-template-columns:8% 14% 1fr 14% 8%;
+    grid-template-rows:7% 9% 1fr 1fr 1fr 1fr 1fr 1fr 30%;
+    grid-template-areas:
+        " . Sbar Sbar Sbar ."
+        " . . . . . "
+        " . descend1 Evname ascend1 ."
+        " . descend2 Evprox ascend2 ."
+        " . descend3 Evcity ascend3 ."
+        " . descend4 Evstate ascend4 ."
+        " . descend5 Evdate ascend5 ."
+        " . descend6 Evlocation ascend6 ."
+        " . . . . . "
+    ;
+}
+form #demo-2{
+  grid-area:Sbar;
+}
+
+.filter {
+  box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  position:relative;
+  vertical-align: middle;
+  transition: all .5s ease;
+}
+.filter div:hover{
+  box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
+}
+.filter h2{
+  font-family:Ubuntu;
+  font-size:14px;
+  text-align:center;
+  position:relative;
+  top:50%;
+}
+#Ename{
+  grid-area:Evname;
+}
+#Eprox{
+  grid-area:Evprox;
+}
+#Ecity{
+  grid-area:Evcity;
+}
+#Estate{
+  grid-area:Evstate;
+}
+#Edate{
+  grid-area:Evdate;
+}
+#Eloc{
+  grid-area:Evlocation;
+}
+.exButton{
+  display:none;
+}
+#ENdescend{
+  grid-area:descend1;
+  display:hidden;
+}
+#EPdescend{
+  grid-area:descend2;
+}
+#ECdescend{
+  grid-area:descend3;
+}
+#ESdescend{
+  grid-area:descend4;
+}
+#EDdescend{
+  grid-area:descend5;
+}
+#ELdescend{
+  grid-area:descend6;
+}
+#ENascend{
+  grid-area:ascend1;
+}
+#EPascend{
+  grid-area:ascend2;
+}
+#ECascend{
+  grid-area:ascend3;
+}
+#ESascend{
+  grid-area:ascend4;
+}
+#EDascend{
+  grid-area:ascend5;
+}
+#ELascend{
+  grid-area:ascend6;
+}
+
+.nextbutton{
+    padding-left:5px;
+    grid-area: nextbutton;
+    align-items:center;
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "."
+        "nb"
+        "."
+    ;
+}
+.prevbutton{
+    padding-right:3px;
+    grid-area: prevbutton;
+    align-items:center;
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "."
+        "pb"
+        "."
+    ;
+}
+
+.b1{
+  grid-area: nb;
+}
+.b2{
+  grid-area: pb;
+}
+
+.tiles{
+    display:grid;
+    grid-area:tiles;
+    grid-gap: 10px;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "1 2 3 4"
+        "5 6 7 8"
+        "9 10 11 12"
+        "13 14 15 16"
+    ;
+}
+
+.box {
+  border:2px solid #06BEE1;
+  background-color: #2DADC6;
+  color: #fff;
+  border-radius: 5px;
+  width:100%;
+  height:100%;
+  display:grid;
+  justify-items:center;
+  grid-template-columns:1fr;
+  grid-template-rows:1fr 1fr 1fr;
+  grid-template-areas:
+      "Ename"
+      "ELoc"
+      "EProx"
+}
+.EventName{
+  grid-area:Ename;
+  font-size:18px;
+
+}
+.EventLoc{
+  grid-area:ELoc;
+  font-size: 9px;
+  word-wrap:normal;
+}
+.EventProx{
+  grid-area:EProx;
+  font-size: 9px;
+}
+.box:hover{
+    width:120%;
+    height:120%;
+    background: #3ADEFF;
+    z-index: 60;
+}
+.box:focus{
+  width:100%;
+  height:100%;
+}
+    .a {
+        grid-area: "1";
+    }
+    .b {
+        grid-area: "2";
+    }
+    .c {
+        grid-area: "3";
+    }
+    .d {
+        grid-area: "4";
+    }
+    .e {
+        grid-area: "5";
+    }
+    .f {
+        grid-area: "6";
+    }
+    .g {
+        grid-area: "7";
+    }
+    .h {
+        grid-area: "8";
+    }
+    .i {
+        grid-area: "9";
+    }
+    .j {
+        grid-area: "10";
+    }
+    .k {
+        grid-area: "11";
+    }
+    .l {
+        grid-area: "12";
+    }
+    .m {
+        grid-area: "13";
+    }
+    .n {
+        grid-area: "14";
+    }
+    .o {
+        grid-area: "15";
+    }
+    .p {
+        grid-area: "16";
+    }
+
+input {
+	outline: none;
+}
+input[type=search] {
+    background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+    border: solid 1px #ccc;
+	padding: 9px 10px 9px 32px;
+    border-radius: 5px;
+	width: 55px;
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
+    transition: all .6s;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none;
+}
+
+#demo-2 input[type=search] {
+	width: 15px;
+	padding-left: 10px;
+	color: black;
+	cursor: pointer;
+}
+#demo-2 input[type=search]:hover {
+	background-color: #2DADC6;
+}
+#demo-2 input[type=search]:focus {
+	width: 370px;
+	color: #000;
+    padding-left:32px;
+	background-color: #3ADEFF;
+	cursor: auto;
+}
+#demo-2 input:-moz-placeholder {
+	color: transparent;
+}
+#demo-2 input::-webkit-input-placeholder {
+	color: transparent;
+}
+.filter{
+  background-color: purple;
+}
+.ffull{
+  grid-area:tiles;
+  background-color: green;
+  display:grid;
+  z-index:-1;
+  position:relative;
+  grid-template-columns:4% 42% 4% 200px 200px 4%;
+  grid-template-rows: 4% 7% 17% 17% 17% 60px 4%;
+  grid-template-areas:
+      ". . . . . ."
+      ". map . FDName FDName ."
+      ". map . FDCityState FDlocation ."
+      ". map . FDDate FDProx ."
+      ". map . . . ."
+      ". FDDesc FDDesc FDDesc FDDesc ."
+      ". . . . . ."
+      ;
+}
+.ffull .EventName{
+    grid-area:FDName;
+    font-size:24px;
+    font-family:Ubuntu;
+    text-align: center;
+}
+.ffull .EventLoc{
+  grid-area:FDCityState;
+  font-size:14px;
+  font-family:Ubuntu;
+}
+.ffull .EventVenue{
+  grid-area:FDlocation;
+  font-size:14px;
+  font-family:Ubuntu;
+}
+.ffull .EventDate{
+  grid-area:FDDate;
+  font-size:14px;
+  font-family:Ubuntu;
+}
+.ffull .map{
+  grid-area:map;
+  background-color:brown;
+}
+.ffull .EventProx{
+  grid-area:FDProx;
+  font-size:14px;
+  font-family:Ubuntu;
+}
+.ffull .EventDesc{
+  grid-area:FDDesc;
+  font-size:14px;
+  font-family:Ubuntu;
+}
+
+.inline{
+  display:inline;
+}

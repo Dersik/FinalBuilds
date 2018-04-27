@@ -1,0 +1,255 @@
+body{
+  margin: 0;
+  padding: 0;
+
+}
+.backgrounddiv{
+  width: 100vw;
+  height: 100vh;
+  background-color: #c2421f;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='47.6' stroke-opacity='0.05' %3E%3Ccircle fill='%23c2421f' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23bd3825' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23b72f2a' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23b1252f' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23aa1c33' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23a21236' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%239a0739' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%2391003c' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%2388003e' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%237e003f' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23740040' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%236a0040' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%235f0040' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%2355003f' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%234a003e' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%233f003c' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23350139' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%232a0236' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  overflow:hidden;
+  z-index:1;
+}
+/* ---------------------HEADER STYLING------------------*/
+
+#titletext h2{
+  color:white;
+  font-size: 36px;
+  margin: -4px 0 0 0;
+  padding: 0;
+  line-height: 1;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+#header{
+  margin:20px;
+  margin-bottom: 0px;
+}
+.container{
+  width:calc(100%-40px);
+  height: 76px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+input {
+	outline: none;
+}
+input[type=search] {
+    background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+    border: solid 1px #ccc;
+	  padding: 9px 10px 9px 0px;
+    border-radius: 5px;
+	  width: 55px;
+	  -webkit-appearance: textfield;
+	  -webkit-box-sizing: content-box;
+	  font-family: "Montserrat", sans-serif;
+	  font-size: 100%;
+    transition: all .6s;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none;
+}
+
+#demo-2 input[type=search] {
+	width: 15px;
+	padding-left: 10px;
+	color: black;
+	cursor: pointer;
+}
+#demo-2 input[type=search]:hover {
+	background-color: #f4a6bd;
+}
+#demo-2 input[type=search]:focus {
+	width: 170px;
+	color: #000;
+  padding-left:32px;
+	background-color: white;
+	cursor: auto;
+}
+#demo-2 input:-moz-placeholder {
+	color: transparent;
+}
+#demo-2 input::-webkit-input-placeholder {
+	color: transparent;
+}
+#searchform{
+  width: 170px;
+}
+#pagination{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width:250px;
+}
+#filtering{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width:350px;
+}
+
+.filter, .pages{
+  border: 1.5px solid #fff;
+  color: #fff;
+  align-items:center;
+  border-radius: 45px;
+  margin:5px;
+  height:30px;
+}
+.filter p, .pages p{
+  padding:2px;
+  position:relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1px;
+  bottom:13px;
+}
+/* ---------------------TILE STYLING------------------*/
+.tilecontainer{
+  display:flex;
+  flex-wrap:wrap;
+  margin:10px;
+  width:calc(100vw - 20px);
+  height:calc(100vh - 102px);
+  justify-content:center;
+}
+.tilecontainer article{
+   margin-left:1px;
+   margin-right:1px;
+   height:23.5%;
+   width:19%;
+   border-radius:20px;
+   border:solid 1.5px white;
+   text-align: center;
+   position: static;
+   font-weight:500;
+}
+.tilecontainer p{
+  font-weight:inherit;
+  color:white;
+  margin:2px;
+  font-family: "Montserrat", sans-serif;
+  font-size:14px;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+article .eventname{
+  height:60%;
+  text-overflow: ellipsis;
+}
+
+article:hover{
+  cursor:pointer;
+}
+.hiddendata{
+  display:none;
+}
+#header:hover{
+  cursor:default;
+}
+.modalbg{
+  position:absolute;
+  top:0px;
+  left:0px;
+  height:100vh;
+  width:100vw;
+  background-color: black;
+  opacity: .85;
+  z-index: 2;
+}
+/*
+content container holds the centering div and modal content because if not the content inheirits faded stroke-opacity
+centering div vertical aligns the modal content-box
+*/
+
+.contentcontainer{
+  display:table;
+  position:absolute;
+  top:0px;
+  left:0px;
+  height:100vh;
+  width:100vw;
+  z-index:3;
+}
+.centeringdiv{
+  display:table-cell;
+  vertical-align: middle;
+}
+.modalcontent{
+  padding:6px;
+  opacity:1;
+  height:70%;
+  width:50%;
+  background-color:white;
+  margin-left:auto;
+  margin-right:auto;
+  border:solid 1.5px black;
+  border-radius: 20px;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-weight:500;
+  color:black;
+  font-family: "Montserrat", sans-serif;
+  font-size:14px;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.closebutton{
+  display:block;
+  color:white;
+  margin-left:auto;
+  margin-right: 25%;
+  height:60px;
+  width:60px;
+  border:solid 1.5px white;
+  text-align: center;
+  vertical-align: middle;
+  line-height:60px;
+  color:white;
+  font-size:35px;
+  border-radius: 45px;
+  font-family: "Montserrat", sans-serif;
+}
+.closebutton:hover{
+  cursor: pointer;
+}
+
+#modal{
+  display:none;
+}
+
+.modalcontent .hiddendata{
+  display:block;
+}
+
+.modalcontent .eventloc p,
+.modalcontent .eventprox p{
+  margin-left:14px;
+  margin-right:14px;
+}
+.modalcontent p,
+.modalcontent .hiddendata p{
+  margin:4px !important;
+  height:auto !important;
+  width:auto !important;
+}
+.modalcontent .eventname{
+  font-size: 24px;
+}

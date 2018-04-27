@@ -1,0 +1,51 @@
+
+.btn{
+	background-color: #c39ed8;
+}
+.btn-primary{
+	background-color: #764B8E;
+}
+
+.custom{
+    background-color:#764B8E;
+    border-radius:10px;
+	padding-bottom:6px;
+}
+
+
+body{
+background-color: #c39ed8;
+/*#f2f2f2;*/
+}
+
+tbody{
+background-color:white;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #edceff;
+}
+
+#event_info {
+	
+	background-color: #c39ed8;
+
+	
+}
+
+p{
+	background-color:white;
+}
+#twid{
+	width :200%
+}
+#des{
+	width : 200%;
+}
+#homebutton{
+	
+}
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}

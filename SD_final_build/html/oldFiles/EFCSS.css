@@ -1,0 +1,101 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+  color: black;
+  background-size: cover;
+  background-color: turquoise;
+  height: 85px;
+  text-align: center; 
+}
+
+.header p{
+  color: black;
+  font-weight: 500;
+  letter-spacing: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-transform: uppercase; S
+   position: relative;
+  bottom: 15px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 940px; 
+  padding: 0 10px;
+}
+.movebar{
+    position: relative;
+    bottom: 60px;
+}
+.nav { 
+  height: 30px; 
+  width: 350px;
+  position:relative;
+    bottom:79px;
+}
+
+.nav ul {
+  height: 80px;
+  list-style: none;
+  margin: 0 auto; 
+  padding: 0;
+}
+
+.nav ul li {
+background: #000;
+  color: #fff;
+  display: block; 
+  height: 80px;
+  line-height: 80px; 
+  list-style: ;
+  padding: 0 10px;
+  transition: background .5s; 
+  font-family: "Arial", sans-serif;
+} 
+
+
+.nav ul li:hover {
+  background: #117bff;
+  cursor: pointer; 
+  transition: background .5s;  
+}
+.nav .ev:hover{
+    transition: background 20s;
+     cursor:default;
+}
+.movebar:hover{
+    cursor:text;
+    
+}
+.nav .ev{
+    background-color:turquoise;
+    text-align: center;
+    font-size: 150%;
+    color:black;
+    
+}
+.nav ul li:active {
+    color: teal;
+}
+.EP{
+    position: relative;
+    bottom: 43px;
+    right: 300px;
+}
+
+.info{
+	border-collapse: collapse;
+	float: right;
+	left: 100px;
+	up: 50px;
+	width: 77%;
+}
+.info .tr:nth-child(even){
+	background-color:turquoise;
+	opacity: 0.3;
+}
